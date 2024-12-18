@@ -1,5 +1,8 @@
 pipeline {
     agent any 
+tools {
+        python 'Python 3.x' // Name of the Python tool configured in Global Tool Configuration
+    }
     stages {
         stage('Build') { 
             steps {
