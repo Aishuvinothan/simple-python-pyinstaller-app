@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat '"C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"pytest --junit-xml test-reports/results.xml sources/test_calc.py'
+                bat '"C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" python -m pytest --junit-xml test-reports/results.xml sources/test_calc.py'
             }
             post {
                 always {
