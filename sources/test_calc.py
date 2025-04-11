@@ -10,14 +10,14 @@ class TestCalc(unittest.TestCase):
         """
         Test that the addition of two integers returns the correct total
         """
-        result = calc.add2(1, 2)
+        result = calc.add2(1, 3)
         self.assertEqual(result, 3)
 
     def test_add_floats(self):
         """
         Test that the addition of two floats returns the correct result
         """
-        result = calc.add2('10.5', 2)
+        result = calc.add2('10.3', 2)
         self.assertEqual(result, 12.5)
 
     def test_add_strings(self):
